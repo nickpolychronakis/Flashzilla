@@ -15,6 +15,9 @@
 		4E3150CE23AA88B400908F10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3150CC23AA88B400908F10 /* LaunchScreen.storyboard */; };
 		4E3150D923AA88B400908F10 /* FlashzillaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3150D823AA88B400908F10 /* FlashzillaTests.swift */; };
 		4E3150E423AA88B400908F10 /* FlashzillaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3150E323AA88B400908F10 /* FlashzillaUITests.swift */; };
+		4E59EA3123B00B0F009B250F /* EditCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E59EA3023B00B0F009B250F /* EditCards.swift */; };
+		4EC2DD6323AD78AD00A78AC9 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2DD6223AD78AD00A78AC9 /* Card.swift */; };
+		4EC2DD6523AD7A7600A78AC9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2DD6423AD7A7600A78AC9 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		4E3150DF23AA88B400908F10 /* FlashzillaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashzillaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3150E323AA88B400908F10 /* FlashzillaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashzillaUITests.swift; sourceTree = "<group>"; };
 		4E3150E523AA88B400908F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E59EA3023B00B0F009B250F /* EditCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCards.swift; sourceTree = "<group>"; };
+		4EC2DD6223AD78AD00A78AC9 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		4EC2DD6423AD7A7600A78AC9 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 				4E3150C123AA88B300908F10 /* AppDelegate.swift */,
 				4E3150C323AA88B300908F10 /* SceneDelegate.swift */,
 				4E3150C523AA88B300908F10 /* ContentView.swift */,
+				4EC2DD6423AD7A7600A78AC9 /* CardView.swift */,
+				4EC2DD6223AD78AD00A78AC9 /* Card.swift */,
+				4E59EA3023B00B0F009B250F /* EditCards.swift */,
 				4E3150C723AA88B400908F10 /* Assets.xcassets */,
 				4E3150CC23AA88B400908F10 /* LaunchScreen.storyboard */,
 				4E3150CF23AA88B400908F10 /* Info.plist */,
@@ -270,6 +279,9 @@
 				4E3150C223AA88B300908F10 /* AppDelegate.swift in Sources */,
 				4E3150C423AA88B300908F10 /* SceneDelegate.swift in Sources */,
 				4E3150C623AA88B300908F10 /* ContentView.swift in Sources */,
+				4E59EA3123B00B0F009B250F /* EditCards.swift in Sources */,
+				4EC2DD6323AD78AD00A78AC9 /* Card.swift in Sources */,
+				4EC2DD6523AD7A7600A78AC9 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
