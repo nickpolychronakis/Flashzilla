@@ -20,6 +20,8 @@ struct CardView: View {
     
     let card: Card
     
+    var isLastCard = false
+    
     var removal: ((_ isAnswerWrong: Bool) -> Void)? = nil
     
     let feedback = UINotificationFeedbackGenerator()
@@ -35,7 +37,7 @@ struct CardView: View {
                     self.differentiateWithoutColor
                         ? nil
                         : RoundedRectangle(cornerRadius: 25, style: .continuous)
-                        .fill(offset.width > 0 ? Color.green : Color.red)
+                            .fill(offset.width > 0 ? Color.green : (offset.width < 0 ? Color.red : Color.white))
                 )
                 .shadow(radius: 10)
             
@@ -76,11 +78,17 @@ struct CardView: View {
                         } else {
                             self.feedback.notificationOccurred(.error)
                             self.removal?(true)
-                            self.offset = .zero
+                            if !self.isLastCard {
+                                self.offset = .zero
+                            } else {
+                                withAnimation(Animation.spring().speed(0.5)) {
+                                    self.offset = .zero
+                                }
+                            }
                             self.isShowingAnswer = false
                         }
                     } else {
-                        withAnimation(Animation.default){
+                        withAnimation(Animation.spring().speed(0.5)){
                             self.offset = .zero
                         }
                     }
@@ -92,7 +100,13 @@ struct CardView: View {
     }
 }
 
-
+//extension View {
+//    func redOrGreen(red:Bool) -> some View {
+//        if red {
+//
+//        }
+//    }
+//}
 
 
 

@@ -68,7 +68,7 @@ struct ContentView: View {
                     // MARK: Card list
                     ZStack {
                         ForEach(0..<cards.count, id: \.self) { index in
-                            CardView(card: self.cards[index]) { isAnswerWrong in
+                            CardView(card: self.cards[index], isLastCard: index == 0) { isAnswerWrong in
                                 withAnimation(Animation.spring()) {
                                     self.removeCard(at: index, isAnswerWrong: isAnswerWrong)
                                 }
